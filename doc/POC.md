@@ -64,5 +64,9 @@ Cheking GUI accessibility.
 
 ## Demo
 
-[![asciicast](https://asciinema.org/a/655312.svg)](https://asciinema.org/a/655312)
+    POC
+[![asciicast](https://asciinema.org/a/655312.svg)](https://asciinema.org/a/655312)      
+
+
+    ArgoCD GUI
 [![youtube](https://i.ibb.co/j6cm6wv/argothumbnail.png)](https://youtu.be/JhBtlz3o95c)
