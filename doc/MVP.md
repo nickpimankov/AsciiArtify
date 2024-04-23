@@ -1,28 +1,29 @@
 # Minimum Viable Product (MVP):
 
-`Goal:` Create a minimum viable product that can be brought to market and receive feedback from users; going to demonstrate the functionality of the `AsciiArtify` application.     
+`Goal:` Create a minimum viable product that can be brought to market and receive feedback from users; going to demonstrate the functionality of the `AsciiArtify` application.         
+
 `Doc Content:` The MVP documentation should include more details compared to the PoC. Typically, this includes defining functional requirements, interface design, technical architecture, execution plan, testing plan, scalability plan, and deployment strategy.     
 
 1. Create the application using the graphical interface. Now, configured applications in ArgoCD will automatically install and update in Kubernetes:  
-    Click on `+ NEW APP`    
-    Name the app as `demo`  
-    Set project name as `default`   
-    Set sync policy as `manual` 
-    In `SOURCE` section, leave default source type `GIT`       
-    Enter `URL` to the repository containing deployment manifests (this will be helm charts or a set of Kubernetes object manifests for our application)  
-    In the `Path` field, enter the path to the `helm` directory 
-    In `DESTINATION` section, specify the `URL` to local cluster and the `Namespace` "demo", after that ArgoCD will automatically determine the application parameters using the manifests found in the repository. If desired, you can manually change their values in the `PARAMETERS` section        
-    Create the app by clicking `CREATE` button
+- Click on `+ NEW APP`    
+- Name the app as `demo`  
+- Set project name as `default`   
+- Set sync policy as `manual` 
+- In `SOURCE` section, leave default source type `GIT`       
+- Enter `URL` to the repository containing deployment manifests (this will be helm charts or a set of Kubernetes object manifests for our application)  
+- In the `Path` field, enter the path to the `helm` directory 
+- In `DESTINATION` section, specify the `URL` to local cluster and the `Namespace` "demo", after that ArgoCD will automatically determine the application parameters using the manifests found in the repository. If desired, you can manually change their values in the `PARAMETERS` section        
+- Create the app by clicking `CREATE` button
 
 2. View the details of deployed application by clicking on it in the list. GUI provides a hierarchical view of the program's components, their deployment, and the current state in the cluster.        
 
 3. Sync the app:    
-    Click `SYNC` button in app details window   
-    Click `SYNCHRONIZE` button in pop-up window on the right after selecting the components and synchronization modes   
-    Once sync is complete, you can verify the app deployment by checking its status in the cluster      
+- Click `SYNC` button in app details window   
+- Click `SYNCHRONIZE` button in pop-up window on the right after selecting the components and synchronization modes   
+- Once sync is complete, you can verify the app deployment by checking its status in the cluster      
 
 4. Check ArgoCD reaction to repo changes:       
-    Apply gateway changes from `NodePort` to `LoadBalancer` in repo file `https://github.com/nickpimankov/go-demo-app/blob/master/helm/values.yaml`
+- Apply gateway changes from `NodePort` to `LoadBalancer` in repo file `https://github.com/nickpimankov/go-demo-app/blob/master/helm/values.yaml`
 
     `NodePort` to `LoadBalancer`
 ```bash
@@ -82,4 +83,4 @@ curl -F 'image=@/home/nickpimankov/Downloads/img.jpg' localhost:8081/img/
 
 9. Screencast the whole process:
 
-[![youtube](https://i.ibb.co/6mSypsD/mvpthumbnail.png)](https://youtu.be/TwjYDm5r7Sk)
+[![youtube](https://i.ibb.co/J2hxm8D/mvpthumbnail2.png)](https://youtu.be/TwjYDm5r7Sk)
