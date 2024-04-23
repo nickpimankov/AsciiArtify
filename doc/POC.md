@@ -69,4 +69,4 @@ Cheking GUI accessibility.
 
 
     ArgoCD GUI
-[![youtube](https://i.ibb.co/j6cm6wv/argothumbnail.png)](https://youtu.be/JhBtlz3o95c)
+[![youtube](imgs/argothumbnail.png)](https://youtu.be/JhBtlz3o95c)

@@ -79,8 +79,8 @@ curl -F 'image=@/home/nickpimankov/Downloads/img.jpg' localhost:8081/img/
 ```     
 - check the result in terminal:
 
-![Result](output1.png)      
+![Result](imgs/output1.png)      
 
 9. Screencast the whole process:
 
-[![youtube](https://i.ibb.co/J2hxm8D/mvpthumbnail2.png)](https://youtu.be/TwjYDm5r7Sk)
+[![youtube](imgs/mvpthumbnail.png)](https://youtu.be/TwjYDm5r7Sk)

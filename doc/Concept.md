@@ -32,7 +32,7 @@ Recommended Tool: k3d
 
 Deployment of "Hello World" Application on Kubernetes  
 
-![Application on Kubernetes](k3ddemo.gif)  
+![Application on Kubernetes](imgs/k3ddemo.gif)  
 
 
 ## Conclusion
